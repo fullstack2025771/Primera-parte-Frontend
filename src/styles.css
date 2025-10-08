@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+/* Importar tipografias*/
+/*Variables de css*/
+/*Importar tipografias*/
+@import url('https://fonts.cdnfonts.com/css/unanimous-brk');
+
+
+:root {
+   --colorprimary: #83E070;
+   --colorsecundary: #E0D370;
+   --colordeenfasis: #70E087;
+   --colorteciario: #D1E0BB;
+   
+}
+
