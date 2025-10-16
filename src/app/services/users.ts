@@ -1,4 +1,4 @@
-import { Injectable, inject,  } from '@angular/core';
+import { Injectable, inject, } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { User } from '../interfaces/user';
 import { environment } from '../../environments/environment';
@@ -9,31 +9,31 @@ import { environment } from '../../environments/environment';
 })
 export class UserService {
   private_httpClient = inject(HttpClient);
-  private apiUrl = 'http://localhost:3000';
+  private apiUrl = environment.appUrl;
 
 
 
 
-postUser(userToCreate : User) {
-   return this.private_httpClient.post('${this.apiUrl}/users' , userToCreate)
-}
+  postUser(userToCreate: User) {
+    return this.private_httpClient.post(`${this.apiUrl}/users`, userToCreate)
+  }
 
-getUser(){
-  return this.private_httpClient.get('${this.apiUrl}/users');
-}
-
-
-
-putUser(userToUpdate: User , id:string){
-   return this.private_httpClient.put('${this.apiUrl}/users/${id}',userToUpdate);
-}
+  getUser() {
+    return this.private_httpClient.get(`${this.apiUrl}/users`);
+  }
 
 
-// Metodo delete
 
-deleteUser(id:string){
-  return this.private_httpClient.delete('{$this.apiUrl}/users/${id}')
-}
+  putUser(userToUpdate: User, id: string) {
+    return this.private_httpClient.put(`${this.apiUrl}/users/${id}`, userToUpdate);
+  }
+
+
+  // Metodo delete
+
+  deleteUser(id: string) {
+    return this.private_httpClient.delete(`${this.apiUrl}/users/${id}`)
+  }
 
 
 

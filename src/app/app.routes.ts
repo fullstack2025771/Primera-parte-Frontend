@@ -13,7 +13,7 @@ export const routes: Routes = [
 {path:'', component: Home, title:'Inicio'},
 {path:'admin', component: Admin, title:'Dashboard'},
 
-{path:'login', component: Login, title:'Inicio Secion'},
+{path:'login', component: Login, title:'Inicio Sesion'},
 
 {path:'products', component: Products, title:'Productos'},
 {path:'register', component: Register, title:'Registro'},

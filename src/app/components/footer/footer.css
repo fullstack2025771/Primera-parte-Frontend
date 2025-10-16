@@ -1,0 +1,32 @@
+.footer {
+    width: 100vw;
+    height: 20vh;
+    background-color: #a3d757;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: left;
+    flex-direction: column; 
+    color: var(--white);
+    border-radius: 40px;
+    
+}
+.span .p{
+    
+    margin-left: 30px;
+}
+
+
+.redes-sociales {
+    display: flex;
+    gap: 10px;
+    font-size: medium;
+    color: var(--white);
+    padding: 5px;
+    justify-content: right;
+    
+}
+.bi {
+    width: 10px;
+    height: 10px;
+}

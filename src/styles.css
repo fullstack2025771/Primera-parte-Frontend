@@ -2,14 +2,28 @@
 /* Importar tipografias*/
 /*Variables de css*/
 /*Importar tipografias*/
-@import url('https://fonts.cdnfonts.com/css/unanimous-brk');
+@import url('https://fonts.cdnfonts.com/css/timkid');
 
 
 :root {
-   --colorprimary: #83E070;
-   --colorsecundary: #E0D370;
-   --colordeenfasis: #70E087;
-   --colorteciario: #D1E0BB;
+   --colorprimary: #A3D757;
+   --colorsecundary: #D7fca2;
+   --colordeenfasis: #F77449;
+   --colorteciario: #BDDCF9;
    
+   --white: #000000;
+   --black:var(--black)
+   --text-dark: #585555;
+}
+body{
+    background-color: (var(--light-background));
+    font-family: "irish-grover",sans-serif;
+    color: var(--text-dark);
+    overflow: hidden;
+}   
+* {
+    margin: 0;
+    padding: 0;
+    border-radius: border-box;
 }
 

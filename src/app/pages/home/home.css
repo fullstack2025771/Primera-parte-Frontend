@@ -1,0 +1,33 @@
+.contenido {
+    display: flex;
+    width: 30%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.contenido .articulo {
+    width: 10%;
+    margin: auto;
+}
+
+.contenido .articulo div {
+    width: 100%;
+    padding: 15px;
+    background-color: #a3d757;
+    border-radius: 15px;
+    margin-bottom: 15px;
+
+}
+
+.contenido .articulo img {
+    width: 10px;
+    border-radius: 15px;
+}
+
+
+
+/* .img {
+    width: 10px;
+    height: 20px;
+    border-radius: 5px;
+} */

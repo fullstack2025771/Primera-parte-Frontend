@@ -7,3 +7,27 @@
 .Serv {
 
 }*/
+.container {
+width: 80%;
+margin: auto;
+border-radius: 15px;
+background-color:#a3d757;
+}
+div ul {
+    width: 80%;
+    margin: auto;
+    border-radius: 15px;
+    background-color: #a3d757;
+}
+div li {
+    display: inline-flex;
+    width: 150px;  
+}
+div li a:hover {
+    background-color: white;
+}
+.icono {
+    margin-right: 20px;
+    
+}
+
