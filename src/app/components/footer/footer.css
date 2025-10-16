@@ -2,7 +2,7 @@
     width: 100vw;
     height: 20vh;
     background-color: #a3d757;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     display: flex;
     justify-content: left;
