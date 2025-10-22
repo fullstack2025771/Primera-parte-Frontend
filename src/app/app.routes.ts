@@ -8,15 +8,17 @@ import { Products } from './pages/products/products';
 import { Register } from './pages/register/register';
 import { Servicios } from './pages/servicios/servicios'; 
 
+import { authGuard } from './guards/auth-guard';
+
 export const routes: Routes = [
     
 {path:'', component: Home, title:'Inicio'},
-{path:'admin', component: Admin, title:'Dashboard'},
+{path:'admin', component: Admin, title:'Dashboard', canActivate: [authGuard]},
 
 {path:'login', component: Login, title:'Inicio Sesion'},
 
 {path:'products', component: Products, title:'Productos'},
-{path:'register', component: Register, title:'Registro'},
+{path:'register', component: Register, title:'Registro' },
 {path:'servicios', component: Servicios, title:'Servicio'},
 {path:'**', component: Notfound, title:'404'},
 

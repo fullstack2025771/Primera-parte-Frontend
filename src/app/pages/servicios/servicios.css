@@ -1,0 +1,145 @@
+ @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+ /* .partev { 
+   background-color: #d7fca2;
+   margin: 0;
+   padding: 0; */
+
+
+
+ .partev {
+   background-color: #d7fca2;
+   display: flex;
+   padding: 40px 20px;
+   justify-content: center;
+   margin: 0;
+   padding: 0;
+ }
+
+ .cuadrov {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   max-width: 900px;
+   background-color: #a3d757;
+   border-radius: 20px;
+   padding: 20px 30px;
+   gap: 20px;
+ }
+
+ .texto1 {
+   flex: 1;
+ }
+
+ .texto1 p {
+   font-size: 18px;
+   color: #a3d757;
+ }
+
+ .texto1 button {
+   background-color: #d9d9d9;
+   color: #121111;
+   border: none;
+   border-radius: 10px;
+   padding: 10px 20px;
+   cursor: pointer;
+   font-family: 'irish Grover', cursive;
+ }
+
+ .texto1 button:hover {
+   background-color: #8bc149;
+ }
+
+ .cuadrov img {
+   width: 250px;
+   border-radius: 10px;
+ }
+
+ .partea {
+   background-color: #bddcf9;
+   display: flex;
+   justify-content: center;
+   padding: 40px 20px;
+ }
+
+ .cuadroa {
+   display: flex;
+   align-items: center;
+   justify-content: space-between max-width 900px;
+   background-color: #ffffff;
+   border-radius: 20px;
+   padding: 20px 30px;
+   gap: 20px;
+ }
+
+ .texto2 {
+   flex: 1;
+
+ }
+
+ .texto2 p {
+   font-size: 18px;
+   color: #333
+ }
+
+ .texto2 button {
+   background-color: #d9d9d9;
+   color: #121111;
+   border: none;
+   border-radius: 10px;
+   padding: 10px 20px;
+   cursor: pointer;
+   font-family: 'irish Grover', cursive;
+ }
+
+ .cuadroa img {
+   width: 250px;
+   border-radius: 10px;
+ }
+
+ .info {
+   background-color: #eeeeee;
+   text-align: center;
+   padding: 25px 10px;
+ }
+
+ .info h2 {
+   color: #333;
+   font-size: 18px;
+   margin: 0;
+   text-transform: uppercase;
+ }
+
+
+ .footer {
+    width: 95vw;
+    height:10vh;
+    background-color: #a3d757;
+  position: fixed;
+    bottom: 0; 
+     display: flex;
+    justify-content: left;
+    flex-direction: column; 
+    color: var(--white);
+    border-radius: 40px;
+    
+}
+.span .p{
+    
+    margin-left: 30px;
+} 
+
+
+.redes-sociales {
+    display: flex; 
+    gap: 10px;
+    font-size: medium;
+    color: var(--white);
+    padding: 5px;
+    justify-content: right;
+    
+}
+.bi {
+    width: 10px;
+    height: 10px;
+}

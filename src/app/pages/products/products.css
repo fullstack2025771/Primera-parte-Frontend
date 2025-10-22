@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+
+.cuadro1 {
+    background-color: #bddcf9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.oferta {
+    text-align: center;
+    font-family: 'Irish Grover', cursive;
+    font-size: 18px;
+}
+
+.estrella {
+    font-size: 40px;
+    color: #f77449;
+}
+
+.imagen-prin {
+    width: 150px;
+    height: auto;
+}
+
+.seccion-productos {
+    text-align: center;
+    margin: 20px;
+}
+
+.titulo {
+    font-weight: bold;
+    font-family: 'Irish Grover', cursive;
+    margin-bottom: 10px;
+}
+
+.fotos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.fotos img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+.footer {
+    width: 95vw;
+    height: 10vh;
+    background-color: #a3d757;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    color: var(--white);
+    border-radius: 40px;
+
+}
+
+.span .p {
+
+    margin-left: 30px;
+}
+
+
+.redes-sociales {
+    display: flex;
+    gap: 10px;
+    font-size: medium;
+    color: var(--white);
+    padding: 5px;
+    justify-content: right;
+
+}
+
+.bi {
+    width: 10px;
+    height: 10px;
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+ 
+.cuadro1 {
+    background-color: #a3d757;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Irish Grover', cursive;
+    
+
+}
+.recuadro {
+    background-color: #d7fca2;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+.titulo {
+    font-size: 22px;
+    color: #0b0a0a;
+    margin-bottom: 20px;
+}
+.formulario input::placeholder {
+ color: #333;
+}
+.btn-registrar {
+    margin-top: 15px;
+    background-color:#f77449 ;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    width: 100%;
+    font-weight: bold;
+    font-family: 'Irish Grover', cursive;
+    cursor: pointer;
+
+}
+.btn-registrar:hover {
+    background-color:#ff946c ;
+} 

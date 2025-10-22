@@ -1,22 +1,82 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+
+
+
+.cuadro {
+    background-color: #d7fca2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Iris Grover' , cursive;
+    padding: 20px;
 }
-main {
-    min-height: 100vh;
-    background-color: #d4c5c5;
-    background-size: cover;
-    background-position: center;
+.recuadro {
+    background-color: #A3D757;
+    border-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;   
+    max-width: 900px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
-.inicio {
-    border: 2px solid rbga(255,255,255,0.2);
-    width: 90%;
-    padding: 30px 40px;
-    border-radius: 10px;
-    
+
+.pet{
+width: 70%;
+border-radius: 20px;
+margin-bottom: 20px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+.formulario {
+    background-color: #A3D757;
+    border-radius: 20px;
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #d4c5c5;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #f77449;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 03s;
+    font-weight: bold;
+    width: 100%;
+
+}
+
+button:hover {
+    background-color: #d85a3b;
 }

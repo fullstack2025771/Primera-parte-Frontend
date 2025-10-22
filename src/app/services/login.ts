@@ -1,26 +1,26 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
-import { environment } from '../../environments/environment.prod';
-import { credencials } from '../interfaces/credencials';
+import { environment } from '../../environments/environment';
+import { Credencials } from '../interfaces/credencials';
 import { jwtDecode } from 'jwt-decode';
 @Injectable({
   providedIn: 'root'
 })
 export class LoginService {
 
-
+//. 1 Inyectar y definir variables
   private _httpClient = inject(HttpClient);
   private _router = inject(Router);
   private apiUrl = environment.appUrl;
 
+// 2 Desarrollo la logica de los servicio
 
 
-
-  Login(loginCredencials: credencials) {
+  Login(loginCredencials: Credencials) {
     return this._httpClient.post(`${this.apiUrl}/login`, loginCredencials);
   }
-
+// 2.2 Decirle al navegador de donde va ha sacar el token
   getToken() {
     // viene del localStorage -> almacenamiento temporal
     return localStorage.getItem('token'); //obtenemos el token del navegador
@@ -53,11 +53,14 @@ export class LoginService {
     }
 
   }
+  // 2.3 Cierre de sesion
   logout() {
     localStorage.removeItem('token');
     alert('Cierre de sesion, Vuelve pronto'),
       this._router.navigate(['/login'])
   }
-
+   isLoggedIn() {
+  return this. getToken() ? true : false;
+} // si no hay token , No esta logueado, si lo hay entonces inicie sesion
 
 }
