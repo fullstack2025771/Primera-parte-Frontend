@@ -44,7 +44,7 @@ export class LoginService {
 
     // si es admin, que redireccione a /admin
     if (this.isAdmin()) {
-      this._router.navigate(['/admin']);
+      this._router.navigate(['/dashboard']);
 
     } else {
       this._router.navigate(['/']);

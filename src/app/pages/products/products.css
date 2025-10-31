@@ -1,5 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+.
 
 .cuadro1 {
     background-color: #bddcf9;
@@ -83,4 +95,4 @@
 .bi {
     width: 10px;
     height: 10px;
-}
+} */

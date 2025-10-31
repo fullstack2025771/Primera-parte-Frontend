@@ -18,6 +18,10 @@ export class UserService {
     return this._httpClient.post(`${this.apiUrl}/users/crear`, userToCreate)
   }
 
+
+
+
+  
   getUser() {
     return this._httpClient.get(`${this.apiUrl}/users/mostrar`);
   }

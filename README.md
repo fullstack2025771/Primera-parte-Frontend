@@ -85,3 +85,31 @@ Este es el link de Figma: https://www.figma.com/design/h837sNhvAOTTG02Z9y1NgJ/Pr
 
 
 <footer>Actualizado por Esperanza carvajal</footer>
+
+
+
+# Tercera Entrega Frontend:
+
+
+# Dra.Pet .Es una aplicacion web desarrollada con Angular 20 que permite administrar los productos y servicios de una veterinaria. Esta pensada para facilitar la interaccion entre la clinica y sus clientes ofreciendo una experiencia moderna Rapida y segura.
+
+
+## Las caracteristicas Principales  son :
+Gestion de Servicios,productos, Autenticacion de Usuarios ,panel de Administracion, y Interfaz Responsiva.
+
+## Las tecnologias que utilizo
+** Frontend: Angular 20, TypeScript, HTML , CSS
+** Librerias : SweetAlert, Bootstrap
+** Backend (API): Node. Js/Express
+** Control de versiones : Git y Github
+
+## Instalo las dependencias con npm install. 
+**Ejecuto el servidor de desarrollo con ng serve.
+**Abro el navegador en http://localhost:4200
+
+## MI objetivo con este proyecto es Entregar una herramienta completa para la gestion de una veterinaria moderna, integrando la atencion a Clientes, la oferta de servicios y el manejo de inventarios de productos para mascotas, con una interfaz intuitiva y un backend seguro.  
+
+
+
+
+<footer>Actualizado por Esperanza carvajal</footer>

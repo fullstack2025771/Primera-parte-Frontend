@@ -14,12 +14,13 @@
     background-color: #A3D757;
     border-radius: 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 90%;   
+    width: 500px;   
     max-width: 900px;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
@@ -35,7 +36,7 @@ box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 .formulario {
     background-color: #A3D757;
     border-radius: 20px;
-    padding: 30px;
+    padding: 20px;
     width: 350px;
     text-align: center;
 }

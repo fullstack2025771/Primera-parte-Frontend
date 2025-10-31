@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { ReactiveFormsModule, FormGroup, FormControl, Validator, } from '@angular/forms';
+import { ReactiveFormsModule, FormGroup, FormControl, Validators, } from '@angular/forms';
 import { User } from '../../interfaces/user';
 import { UserService } from '../../services/users';
 import { Router } from '@angular/router';
@@ -17,14 +17,21 @@ export class Register {
 
 
   registerForm = new FormGroup({
-    name: new FormControl(''),
-    email: new FormControl(''),
-    address: new FormControl(''),
-    telephone: new FormControl(''),
-    password: new FormControl(''),
-
+    name: new FormControl('', [Validators.required]),
+    email: new FormControl('', [Validators.required, Validators.email]),
+    address: new FormControl('', [Validators.required]),
+    telephone: new FormControl('', [Validators.required]),
+    password: new FormControl('',  [Validators.required, Validators.minLength(3)]),
+    //Incluye todas las letras de a a la z , minusculas y mayuscula
   });
   handleSubmit() {
+   if (this.registerForm.invalid) {
+    this.registerForm.markAsUntouched();
+    return;
+
+   }
+
+
     const userData: User = {
       _id: '',
       name: this.registerForm.value.name || '',

@@ -1,0 +1,33 @@
+<div class="servicios-container">
+    <button class="btn btn-add" (click)="nuevoServicioForm()">Nuevo servicios-grid</button>
+  @if (servicios.length > 0) {
+    <h1 class="servicios-title">🐾 Lista de Servicios</h1>
+
+    <div class="servicios-grid">
+      @for (s of servicios; track $index) {
+        <div class="servicio-card">
+          <div class="servicio-img">
+            <img [src]="baseUrl+s.image || 'assets/img/default-service.png'" alt="Imagen del servicio" />
+          </div>
+
+          <div class="servicio-info">
+            <h2>{{ s.title }}</h2>
+            <p class="description">{{ s.description }}</p>
+            <p class="price-label">💲 Precio:</p>
+            <p class="price-value">{{ s.price | currency:'USD':'symbol' }}</p>
+          </div>
+
+          <div class="servicio-actions">
+            <button class="btn btn-edit" (click)="updateServiInfo(s._id)">✏️ Editar</button>
+            <button class="btn btn-delete" (click)="deleteServicio(s._id)">🗑️ Eliminar</button>
+          </div>
+        </div>
+      }
+    </div>
+  } @else {
+    <div class="no-servicios">
+      <h3>No hay servicios disponibles por el momento.</h3>
+      <p>Agrega un nuevo servicio para comenzar.</p>
+    </div>
+  }
+</div>
