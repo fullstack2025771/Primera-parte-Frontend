@@ -7,7 +7,7 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-updates-product',
-  imports: [FormsModule],
+  imports: [FormsModule, RouterLink],
   templateUrl: './updates-product.html',
   styleUrl: './updates-product.css'
 })

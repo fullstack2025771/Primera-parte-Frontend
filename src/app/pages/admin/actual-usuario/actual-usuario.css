@@ -82,15 +82,9 @@ input:focus {
   transition: 0.3s;
 }
 
-
-.btn-actualizar:hover {
-  background-color: var(--colorsecondary);
-}
-
-
 .btn-volver {
   width: 100%;
-  background-color: var(--colordenfasis);
+  background-color: #F77449 ;
   border: none;
   padding: 10px;
   font-weight: bold;
@@ -98,11 +92,7 @@ input:focus {
   margin-top: 10px;
   color: white;
   transition: 0.3s;
-}
 
-
-.btn-volver:hover {
-  background-color: #e4603a;
 }
 
 

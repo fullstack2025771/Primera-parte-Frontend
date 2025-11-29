@@ -63,9 +63,12 @@ button {
   transition: 0.3s;
 }
 
-
+.botonSecundary {
+    background-color: #F77449 !important;
+}
 button:hover {
   background-color: var(--colorsecondary) !important;
+  color: #F77449 !important;
 }
 
 
