@@ -1,0 +1,18 @@
+
+
+        <form (ngSubmit)="enviarConsulta()" #formConsulta="ngForm" class="form">
+
+        <label>Nombre del Dueño</label>
+        <input type="text" required [(ngModel)]="Consulta.nombre" name="nombre" placeholder="consulta" >
+
+ <label>Nombre de la Mascota</label>
+        <input type="text" required [(ngModel)]="Consulta.mascota" name="mascota" placeholder="name" >
+
+ <label>Telefono</label>
+        <input type="tel" required [(ngModel)]="Consulta.telefono" name="telefono" placeholder="telephone" >
+
+ <label>Describe el problema</label>
+        <textarea type="text" required [(ngModel)]="Consulta.problema" name="descripcion" placeholder="descripcion" ></textarea>
+
+<button type="submit" [disabled]="!formConsulta.form.valid">Agendar Consulta</button>
+

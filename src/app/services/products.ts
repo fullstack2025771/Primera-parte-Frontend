@@ -26,7 +26,9 @@ getAllProducts() {
     return this._httpClient.get(this.apiUrl + '/products/mostrar');
 
   }
-
+getProductById(id: String){
+     return this._httpClient.get(this.apiUrl + '/products/getproduct/'+ id);
+}
   // Peticion post
 
 
@@ -44,16 +46,7 @@ putProducts(productToUpdate: Product, id: string) {
 // peticion delete
 deleteProduct(id: string){
   //return this._httpClient.delete(this.apiUrl + id)
-  return this._httpClient.delete(this.apiUrl + '/products/eliminar/:id', {
-    params: { id }
-  });
+  return this._httpClient.delete(`${this.apiUrl}/products/eliminar/${id}`);
 };
-
-
-
-
-
-
-
 
 }

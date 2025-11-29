@@ -10,8 +10,9 @@
 
 
     <div class="d-flex gap-4">
-        <button class="btn btn-info" (click)="updateUsersInfo(user._id)">Actualizar</button>
-        <button class="btn btn-danger" (click)="deleteUser(user._id)">Eliminar</button>
+
+        <button class="btn btn-info" [routerLink]="['/actualizar-user', user._id!]" >Actualizar</button>
+        <button class="btn btn-danger" (click)="deleteUser(user._id!)">Eliminar</button>
 
     </div>
     }

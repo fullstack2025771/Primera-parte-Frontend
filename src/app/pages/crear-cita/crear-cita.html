@@ -1,0 +1,25 @@
+<form (ngSubmit)="enviarCita()" #formCita="ngForm" class="form">
+
+    <label>Nombre del dueño</label>
+    <input type="text" required [(ngModel)]="cita.nombreDueno" name="nombre" placeholder="name">
+
+    <label>Nombre de la mascota</label>
+    <input type="text" required [(ngModel)]="cita.nombreMascota" name="mascota" placeholder="name">
+
+    <label>Telefono</label>
+    <input type="text" required [(ngModel)]="cita.telefono" name="telefono" placeholder="date">
+
+
+    <label>Hora</label>
+    <input type="time" required [(ngModel)]="cita.date" name="hora" placeholder="date">
+
+    <!-- <label>Motivo</label>
+            <textarea type="text" required [(ngModel)]="cita.describeProblema" name="motivo" placeholder="description" ></textarea> -->
+    <textarea required [(ngModel)]="cita.describeProblema" name="motivo" placeholder="description"></textarea>
+
+    <button type="submit">
+  Agendar Cita
+</button>
+
+    <!-- <button type="submit" [disabled]="!formCita.form.valid">Agendar Cita</button> -->
+</form>

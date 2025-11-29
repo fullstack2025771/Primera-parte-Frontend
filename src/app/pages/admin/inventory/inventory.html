@@ -1,20 +1,16 @@
-@for (product of allProduct; track $index) {
+@for (product of allProduct; track product._id) {
   <div class="producto-card">
     <h2>{{ product.title }}</h2>
     <p>{{ product.description }}</p>
     <p>{{ product.price }}</p>
     <p>{{ product.category }}</p>
-    <img [src]="product.Image" alt="">
+    <img [src]="product.image" alt="">
     <div class="d-flex gap-4">
-      <button class="btn btn-info" (click)="updateProductInfo(product._id)">Actualizar</button>
-      <button class="btn btn-danger" (click)="deleteProduct(product._id)">Eliminar</button>
+      <button class="btn btn-info" [routerLink]="['/actualizar', product._id]" >Actualizar</button>
+      <button class="btn btn-danger" (click)="deleteProduct(product._id!)">Eliminar</button>
     </div>
   </div>
-} 
-
-
-
-
+}
     <hr>
 <h2>{{ productSelected._id ? 'Actualizar Producto' : 'Crear Nuevo Producto' }}</h2>
 
@@ -41,16 +37,18 @@
   </div>
 
   <div class="mb-3">
-    <label for="Image">Imagen (URL):</label>
-    <input type="text" id="Image"  [(ngModel)]="productSelected.Image" name="Image" class="form-control">
+    <label for="image">Imagen (URL):</label>
+    <input type="text" id="image"  [(ngModel)]="productSelected.image" name="image" class="form-control">
   </div>
 
   <button class="btn btn-success" type="submit">
     {{ productSelected._id ? 'Actualizar' : 'Crear' }}
   </button>
 
-  <button class="btn btn-secondary ms-3" type="button" (click)="resetForm()">
+  <button class="btn btn-secondary ms-3" type="button" (click)="resetForm()"> 
     Limpiar
   </button>
+
+  <button class="btn btn-primary" [routerLink]="['/crear-producto']">Registrar producto</button>
 </form>
 

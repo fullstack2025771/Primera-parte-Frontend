@@ -1,0 +1,114 @@
+@import url('https://fonts.cdnfonts.com/css/eins-sans');
+
+
+:root {
+  --colorprimary: #A3D757;
+  --colorsecondary: #D7FCA2;
+  --colordenfasis: #F77449;
+  --colorteciario: #BDDCF9;
+
+  --white: #ffffff;
+  --black: #000000;
+  --text-dark: #585555;
+}
+
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--colorteciario);
+  font-family: 'Eins Sans', sans-serif;
+}
+
+
+.cuadro1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.recuadro {
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+.formulario {
+  width: 100%;
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+}
+
+
+label {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+
+input {
+  border-radius: 6px !important;
+  border: 1px solid #ddd !important;
+  font-size: 14px;
+}
+
+
+input:focus {
+  border-color: var(--colorprimary) !important;
+  box-shadow: 0 0 0 0.15rem rgba(163, 215, 87, 0.4) !important;
+}
+
+
+.btn-actualizar {
+  width: 100%;
+  background-color: var(--colorprimary);
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+
+.btn-actualizar:hover {
+  background-color: var(--colorsecondary);
+}
+
+
+.btn-volver {
+  width: 100%;
+  background-color: var(--colordenfasis);
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 10px;
+  color: white;
+  transition: 0.3s;
+}
+
+
+.btn-volver:hover {
+  background-color: #e4603a;
+}
+
+
+@media (max-width: 500px) {
+  .recuadro {
+    margin: 15px;
+    padding: 2
+  }
+}

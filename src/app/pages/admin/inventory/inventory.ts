@@ -4,12 +4,13 @@ import { Product } from '../../../interfaces/product';
 import Swal from 'sweetalert2';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from "@angular/router";
 
 
 @Component({
   selector: 'app-inventory',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, RouterLink],
   templateUrl: './inventory.html',
   styleUrl: './inventory.css'
 })
@@ -18,12 +19,13 @@ export class Inventory implements OnInit {
   allProduct: Product[] = [];
 
   productSelected: Product = {
-    _id: '',
+    
+
     title: '',
     description: '',
     price: 0,
     category: '',
-    Image: ''
+    image: ''
   };
 
  ngOnInit(): void {
@@ -41,22 +43,11 @@ this._productService.getAllProducts().subscribe({
   }
     
 saveProduct() {
+  console.log(this.productSelected)
     // Si tiene ID → actualizar
-    if (this.productSelected._id) {
-      this._productService.putProducts(this.productSelected, this.productSelected._id).subscribe({
+    this._productService.postProduct(this.productSelected).subscribe({
         next: (res: any) => {
-          Swal.fire('Actualizado', res.mensaje || 'Producto actualizado con éxito', 'success');
-          this.resetForm();
-          this.showProduct();
-        },
-        error: (err: any) => {
-          console.error(err);
-          Swal.fire('Error', 'No se pudo actualizar el producto', 'error');
-        }
-      });
-    } else {
- this._productService.postProduct(this.productSelected).subscribe({
-        next: (res: any) => {
+          console.log(this.productSelected)
           Swal.fire('Creado', res.mensaje || 'Producto creado con éxito', 'success');
           this.resetForm();
           this.showProduct();
@@ -66,8 +57,8 @@ saveProduct() {
           Swal.fire('Error', 'No se pudo crear el producto', 'error');
         }
       });
-    }
   }
+ 
 updateProductInfo(id: any){
    this._productService.putProducts(this.productSelected, id).subscribe({
     next:(res: any)=> {
@@ -79,12 +70,7 @@ updateProductInfo(id: any){
         }
    })
 
-
 }
-
-
-
-
 
 deleteProduct(id: string) {
     this._productService.deleteProduct(id).subscribe({
@@ -100,12 +86,12 @@ deleteProduct(id: string) {
   }
 resetForm() {
     this.productSelected = {
-      _id: '',
+      
       title: '',
       description: '',
       price: 0,
       category: '',
-      Image: ''
+      image: ''
     };
   }
 }

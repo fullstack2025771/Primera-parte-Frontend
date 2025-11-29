@@ -3,7 +3,7 @@ _id: string;
 description: string;
 price: number;
 title: string;
-image: string;
+image?: string;
 
 
 

@@ -1,0 +1,86 @@
+
+
+
+@import url('https://fonts.cdnfonts.com/css/eins-sans');
+
+:root {
+  --colorprimary: #A3D757;
+  --colorsecondary: #D7FCA2;
+  --colordenfasis: #F77449;
+  --colorteciario: #BDDCF9;
+
+  --white: #ffffff;
+  --black: #000000;
+  --text-dark: #585555;
+}
+
+
+.form {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  font-family: 'Eins Sans', sans-serif;
+}
+
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-top: 15px;
+  color: var(--text-dark);
+}
+
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+  font-family: 'Eins Sans', sans-serif;
+  transition: border 0.3s ease;
+}
+
+
+input:focus, textarea:focus {
+  border-color: var(--colorprimary);
+}
+
+
+textarea {
+  resize: none;
+  height: 90px;
+}
+
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: var(--colorprimary);
+  color: var(--black);
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+
+button:hover {
+  background-color: var(--colorsecondary);
+}
+
+
+@media (max-width: 520px) {
+  .form {
+    margin: 20px;
+    padding: 20px;
+  }
+}

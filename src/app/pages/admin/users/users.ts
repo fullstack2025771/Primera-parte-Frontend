@@ -2,20 +2,21 @@ import { Component, inject, OnInit } from '@angular/core';
 import { UserService } from '../../../services/users';
 import { User } from '../../../interfaces/user';
 import Swal from 'sweetalert2';
+import { RouterLink } from '@angular/router';
 
 
 @Component({
     selector: 'app-users',
-    imports: [],
+    imports: [RouterLink],
     templateUrl: './users.html',
     styleUrls: ['./users.css']
 })
+// Inyeccion de dependencias y inicilizacion de variables
 export class UserComponent implements OnInit {
     private _userService = inject(UserService);
     allUsers: User[] = [];
 
     showUsers() {
-
         this._userService.getUser().subscribe({
             next: (res: any) => {
                 console.log(res);
@@ -23,13 +24,11 @@ export class UserComponent implements OnInit {
                 console.log(this.allUsers);
             },
             error: (err: any) => {
-                console.error(err)
+                console.error(err.mensaje)
             }
         });
     }
-
-
-
+      // Se toma como ref el registro de usuarios
     deleteUser(id: string) {     // hace la peticion delete 
 
         console.log('Id del usuario a  eliminar: ', id)
@@ -74,10 +73,6 @@ export class UserComponent implements OnInit {
             },
             error: (err: any) => console.error()
         });
-
-
-
-
 
 
     }

@@ -1,0 +1,35 @@
+<main>
+    <div class="cuadro1">
+        <div class="recuadro">
+            <form class="formulario" [formGroup]="registerForm" (ngSubmit)="handleSubmit()">
+                <h1>Actualizar Usuarios</h1>
+
+                <div class="mb-3">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" class="form-control" id="nombre" formControlName="name"
+                        placeholder="Ingrese su nombre completo" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="correo">Correo Electronico</label>
+                    <input type="text" class="form-control" id="correo" formControlName="email"
+                        placeholder="Ingrese su correo" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="direccion">address</label>
+                    <input type="text" class="form-control" id="direccion" formControlName="address"
+                        placeholder="Ingrese su direccion" required>
+                    <div class="mb-3">
+                        <button type="submit" class="btn-actualizar">
+                            Actualizar Usuario
+                        </button>
+                        <div class="mb-3">
+                            <button type="button" class="btn-volver" (click)="volver()">
+                                Volver a Gestión de Usuarios
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
